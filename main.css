@@ -106,3 +106,10 @@ h2.bar-text {
 .picture {
     width: 500px;
 }
+
+.flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
