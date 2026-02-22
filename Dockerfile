@@ -1,5 +1,4 @@
-FROM docker.io/nginx:alpine
-RUN rm -rf /usr/share/nginx/html/*
+FROM docker.io/nginxinc/nginx-unprivileged:alpine
 COPY . /usr/share/nginx/html/
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
